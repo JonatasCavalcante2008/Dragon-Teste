@@ -1,10 +1,11 @@
 <?php
+    $pasta = explode('/',$_SERVER['REQUEST_URI']);
 
     define("SITE",[
             "name"   => "Pedidos",
             "domain" => "http://pedidos.com.br",
             "locale" => "pt_BR",
-            "root"   => "http://localhost/pedidos"
+            "root"   => "http://localhost/".$pasta[1]
     ]);
 
     define("DATA_LAYER_CONFIG", [
